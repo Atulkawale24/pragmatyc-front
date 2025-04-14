@@ -1,0 +1,61 @@
+.topHeaderWrapper {
+  @apply flex items-center justify-between w-full bg-white px-5 py-2 rounded-md;
+}
+
+.tabName {
+  font-size: 17px;
+  @apply text-black font-Poppins font-semibold;
+}
+
+.topHeaderRight {
+  @apply flex items-center gap-6;
+}
+
+.searchWrapper {
+  @apply w-[250px] h-[35px] py-1 px-4 flex items-center bg-[#F7F7FD] rounded-xl;
+}
+
+.searchWrapper input {
+  font-size: 14px;
+  @apply focus:outline-none bg-transparent font-Poppins font-medium;
+}
+
+.searchWrapper input::placeholder {
+  color: #a9a9a9;
+}
+
+.searchWrapper svg {
+  color: #a9a9a9;
+  font-size: 20px;
+  @apply ml-auto;
+}
+
+.notificationWrapper {
+  @apply relative;
+}
+
+.countWrapper {
+  @apply w-4 h-4 bg-white border border-black absolute top-[-4px] right-[-4px] rounded-full flex items-center justify-center;
+}
+
+.countWrapper h6 {
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.profileWrapper {
+  @apply w-[45px] h-[45px] rounded-md overflow-hidden bg-white flex justify-center items-center;
+}
+
+.profileWrapper img {
+  @apply w-[100%] h-[100%];
+}
+
+@media only screen and (max-width:560px) {
+  .profileWrapper {
+    @apply hidden;
+  }
+  .tabName {
+    font-size: 14px;
+  }
+}

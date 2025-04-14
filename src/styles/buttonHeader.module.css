@@ -1,0 +1,9 @@
+.headerWrapper {
+  @apply my-3 flex items-center justify-between;
+}
+.selectPageWrapper {
+  @apply flex items-center gap-4;
+}
+.selectPageWrapper h6 {
+  @apply text-[14px] font-Poppins text-gray font-medium;
+}

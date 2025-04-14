@@ -1,0 +1,44 @@
+/*===========css for pagination=============*/
+.paginationMain {
+  @apply flex justify-between items-center my-3;
+}
+.paginationMain h5 {
+  @apply text-gray font-Poppins;
+}
+.paginationMain p {
+  @apply text-gray font-Poppins;
+}
+.paginationWrapper {
+  @apply flex items-center gap-3 bg-white py-1.5 px-4 rounded-md shadow-sm;
+}
+
+.paginationInputWrapper {
+  @apply flex items-center relative h-[30px] gap-2;
+}
+
+.paginationInputWrapper .form-control {
+  @apply h-[100%];
+}
+
+.paginationWrapper .btn_pagination {
+  @apply text-white py-1 px-2 rounded-sm disabled:bg-lightGray disabled:cursor-not-allowed;
+}
+.btn_pagination svg {
+  @apply text-blue;
+}
+
+.paginationInputWrapper .find_btn {
+  @apply bg-blue py-0 px-2 absolute top-0 right-0 h-[100%] text-white;
+}
+
+.paginationWrapper .paginationInputWrapper h6 {
+  @apply text-blue font-Poppins;
+}
+
+.paginationInputWrapper .form_control {
+  @apply focus:border-none outline-none shadow-none w-[50px] px-0 max-w-20 py-0 text-center bg-blue text-white rounded-sm;
+}
+
+.paginationInputWrapper .find_btn:hover {
+  @apply hover:bg-blue text-white;
+}

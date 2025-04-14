@@ -1,0 +1,105 @@
+.sideNavWrapper,
+.mobileMenu {
+  @apply bg-white shadow-sm w-[20%] rounded-md relative;
+}
+
+.headerWrapper {
+  @apply w-[97%] mx-auto flex items-center my-auto p-3 border-b-2 border-[#f8f8f8];
+}
+
+.logoWrapper {
+  @apply w-[60%];
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+}
+
+.listWrapper {
+  @apply px-3 py-5;
+}
+
+.listItem,
+.inActiveListItem {
+  @apply flex gap-2 mb-6;
+}
+
+.item,
+.isSubMenuActive,
+.isSubMenuInActive {
+  @apply flex items-center gap-4 cursor-pointer;
+}
+
+.listItem img {
+  filter: invert(1)
+}
+
+.iconWrapper {
+  @apply w-8 h-8 bg-blue rounded-lg p-2 flex items-center justify-center;
+}
+
+.listItemText {
+  font-size: 15px;
+  @apply font-Poppins font-semibold text-blue;
+}
+
+.inActiveListItem .iconWrapper {
+  @apply bg-[#F0F0F8];
+}
+
+.inActiveListItem .listItemText {
+  @apply text-black;
+}
+
+.isSubMenuActive,
+.isSubMenuInActive {
+  @apply mb-6;
+}
+
+.isSubMenuActive .activeLine {
+  @apply w-[30px] h-1 bg-blue rounded-md;
+}
+
+.isSubMenuInActive .activeLine {
+  @apply w-[30px] h-1 bg-transparent rounded-md;
+}
+
+.isSubMenuActive .listItemText {
+  @apply text-blue;
+}
+
+.isSubMenuInActive .listItemText {
+  @apply text-black;
+}
+
+.logoutButtonWrapper {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logoutButtonWrapper svg {
+  @apply text-blue text-2xl
+}
+
+.logoutButtonWrapper h5 {
+  @apply text-blue
+}
+
+@media only screen and (max-width:560px) {
+  .sideNavWrapper {
+    @apply absolute top-0 left-0 w-[50%] h-[100%] hidden;
+    z-index: 1000;
+  }
+
+  .mobileMenu {
+    @apply absolute top-0 left-0 w-[50%] h-[100%];
+    z-index: 1000;
+  }
+}
