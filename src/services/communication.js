@@ -9,7 +9,8 @@ const getCookie = () => {
 
 function getServerUrl() {
     // return "http://localhost:3021";
-    return "http://103.220.82.181:7080";
+    // return "http://103.220.82.181:7080";
+return "https://pragmatyc-backend.vercel.app";
 }
 
 export const communication = {
